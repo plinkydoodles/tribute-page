@@ -1,0 +1,479 @@
+/* Universal Box Sizing with Inheritance */
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Global Styles */
+
+body {
+  margin-top: 50px;
+  background: rgb(97, 97, 97);
+  background: linear-gradient(0deg, rgba(97, 97, 97, 1) 0%, rgba(44, 31, 57, 1) 16%, rgba(55, 123, 120, 1) 38%, rgba(66, 58, 74, 1) 61%, rgba(65, 57, 73, 1) 83%, rgba(59, 160, 145, 1) 100%);
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  color: #F5F5F5;
+  text-align: center;
+
+
+
+
+}
+
+li {
+  padding-bottom: 5px;
+}
+
+i {
+  padding-top: 20px;
+}
+
+hr {
+  border: 2px solid #474747;
+  border-radius: 1em;
+}
+
+/* Wrapper */
+
+main {
+  background-color: #292929;
+  padding: 0 0 20px 0;
+  border-radius: 7px;
+  margin-left: 8%;
+  margin-right: 8%;
+  min-width: 250px;
+}
+
+/* Header */
+
+header {
+  background-color: #474747;
+  margin: 10px 0 5px 0;
+  padding: 25px 0 25px 0;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+.title {
+  text-align: center;
+  font-size: 3.75rem;
+  margin: 10px 0 10px 0;
+  padding: 0 0 5px 0;
+  color: #EF7C8E;
+  font-family: "Playfair Display", Helvetica, sans-serif;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.3), 0 3px 7px rgba(0, 0, 0, 0.1), 0 3px 7px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: normal;
+  color: #F5F5F5;
+  padding-bottom: 5px;
+}
+
+/* Misc Formatting */
+
+.margin-top {
+  margin-top: 18px;
+}
+
+.center {
+  text-align: center;
+}
+
+.indent {
+  text-indent: 2.5em;
+  margin-bottom: 0;
+  line-height: 1.7;
+  text-align: left;
+  font-size: 1.09em;
+}
+
+/* Nav Menu */
+
+nav {
+  padding: 20px 0 0 0;
+}
+
+.nav-list {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #292929;
+}
+
+.nav-link {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: #EF7C8E;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #F5F5F5;
+}
+
+.nav-li {
+  display: inline-block;
+}
+
+/* Main Image */
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #474747;
+  padding: 5px 5px 0 5px;
+  background: #474747;
+  border-top-left-radius: .8rem;
+  border-top-right-radius: .8rem;
+}
+
+.img-div {
+  padding-top: 20px;
+  padding-bottom: 4px;
+}
+
+.img-caption {
+  text-align: center;
+  background-color: #474747;
+  margin: 0 auto;
+  padding: 10px;
+  width: 80%;
+  border: 4px solid #474747;
+  font-size: 1.05em;
+  border-bottom-left-radius: .8rem;
+  border-bottom-right-radius: .8rem;
+
+}
+
+/* Biography Section */
+
+.bio {
+  padding: 16px 10% 0 10%;
+}
+
+.bio-header {
+  font-size: 24px;
+  padding: 10px 0 10px 0;
+  margin: 0;
+  color: #F5F5F5;
+}
+
+.bio-icon {
+  color: #EF7C8E;
+}
+
+/* Quotes Section */
+
+q {
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+  padding: 25px 20px 25px 20px;
+}
+
+q:first-of-type {
+  margin-top: 18px;
+}
+
+.sagan-quotes {
+  padding: 16px 10% 0 10%;
+}
+
+.sagan-quotes q:nth-of-type(odd) {
+  background: #474747;
+  border-top: 10px solid #D8A7B1;
+}
+
+.sagan-quotes-header {
+  padding: 10px 0 15px 0;
+  margin: 0;
+  color: #F5F5F5;
+}
+
+.quote-icon {
+  color: #66C7B2;
+}
+
+/* Awards Section */
+
+.awards {
+  padding: 0 10% 0 10%;
+}
+
+.awards-header {
+  padding: 10px 0 20px 0;
+  margin: 0;
+  color: #F5F5F5;
+}
+
+.awards-list {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.awards-list :nth-of-type(odd) {
+  /*background: #474747;*/
+  color: #EF7C8E;
+  border-radius: 1rem;
+  font-weight: bolder;
+  padding: 0px 10px 10px 10px;
+
+}
+
+.awards-list li {
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0px 10px 25px 10px;
+}
+
+.awards-icon {
+  color: #EF7C8E;
+}
+
+/* Blockquote */
+
+blockquote {
+  background: #474747;
+  border-top: 10px solid #66C7B2;
+  margin: 1.9em 10px 1.5em 10px;
+  padding: 0.5em 1px 1em 10px;
+}
+
+.quote {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.seperator {
+  margin: 1em;
+  font-size: 1em;
+  font-weight: 700;
+  color: #F5F5F5;
+}
+
+.arrow-top-link:hover {
+  color: #F5F5F5;
+}
+/* Link to Wikipedia */
+
+.wiki-icon {
+  color: #EF7C8E;
+}
+
+.wiki-link {
+  padding: 0;
+  margin-top: 0;
+
+
+}
+
+.wiki-link :hover {
+  color: #F5F5F5;
+}
+
+/* Footer */
+
+footer a:link,
+footer a:visited,
+footer a:active {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #EF7C8E;
+}
+
+.name {
+  color: #F5F5F5;
+  /*text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);*/
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.my-links {
+  padding-bottom: 20px;
+}
+
+.footer-link {
+  padding: 0 15px 0 15px;
+}
+
+.footer-link:link,
+.footer-link:visited,
+.footer-link:active {
+  color: #F5F5F5;
+}
+
+.footer-link:hover {
+  color: #EF7C8E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.discography-category {
+
+    color: #474747;
+    display: block;
+    text-align: center;
+    line-height: 1.5;
+    border: 2px solid #D8A7B1;
+    padding: 15px 10px 15px 10px;;
+    margin: 0;
+    /*border-radius: .8rem;*/
+    background-color: #D8A7B1;
+
+}
+
+.discography-list {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+}
+
+.discography-list :nth-of-type(1n+0) {
+    border: 1px solid #474747;
+/*    border-radius: .8rem;*/
+
+}
+
+.discography-list li {
+  line-height: 1.5;
+  padding: 15px 10px 15px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Responsive */
+
+@media only screen and (max-width: 1366px) {
+  body {
+    background: rgb(97, 97, 97);
+    background: linear-gradient(0deg, rgba(97, 97, 97, 1) 0%, rgba(44, 31, 57, 1) 16%, rgba(55, 123, 120, 1) 38%, rgba(66, 58, 74, 1) 61%, rgba(65, 57, 73, 1) 83%, rgba(59, 160, 145, 1) 100%);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    margin-top: 0;
+    color: #F5F5F5;
+    text-align: center;
+  }
+
+  main {
+    margin: 0 auto;
+  }
+
+  header {
+    background: #474747;
+    margin: 10px 0 5px 0;
+    padding: 25px 10px 25px 10px;
+  }
+
+  .subtitle {
+    padding: 5px 15px;
+  }
+
+  nav {
+    width: 260px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .nav-link {
+    float: none;
+    background: #474747;
+    text-align: center;
+    width: 12rem;
+    border-radius: 1.5rem;
+  }
+
+  .indent {
+    text-indent: 0em;
+    margin-bottom: 0;
+    line-height: 1.7;
+    text-align: center;
+    font-size: 1.09em;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .subtitle {
+    padding: 5px 10px;
+  }
+}
