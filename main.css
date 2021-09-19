@@ -15,8 +15,8 @@ html {
 
 body {
   margin-top: 10px;
-  background: rgb(97, 97, 97);
-  background: linear-gradient(0deg, rgba(97, 97, 97, 1) 0%, rgba(44, 31, 57, 1) 16%, rgba(55, 123, 120, 1) 38%, rgba(66, 58, 74, 1) 61%, rgba(65, 57, 73, 1) 83%, rgba(59, 160, 145, 1) 100%);
+background: rgb(212,205,127);
+background: linear-gradient(0deg, rgba(212,205,127,1) 0%, rgba(77,91,117,1) 40%, rgba(202,90,115,1) 100%);
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   color: #F5F5F5;
   text-align: center;
@@ -64,8 +64,6 @@ header {
   padding: 0 0 5px 0;
   color: #BF5A75;
   font-family: "Playfair Display", Helvetica, sans-serif;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
-
 
 }
 
@@ -75,6 +73,7 @@ header {
   font-weight: normal;
   color: #F5F5F5;
   padding-bottom: 5px;
+
 }
 
 
@@ -106,7 +105,6 @@ header {
 }
 
 
-
 /* Main Image */
 
 img {
@@ -118,10 +116,9 @@ img {
   padding: 5px;
   background: #3f4652;
   border-radius: .8rem;
-  display: flex;
+  /*display: flex;
   align-items: center;
-  justify-content: center;
-
+  justify-content: center;*/
 
 }
 
@@ -163,10 +160,8 @@ nav {
   padding: 14px;
   font-size: 1.2em;
   font-weight: bold;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
   background: #3f4652;
-/*  width: 8rem;*/
-/*border-radius: 1.5rem;*/
+
 
 }
 
@@ -324,16 +319,15 @@ q {
 
 /* Link to Wikipedia */
 
-
 .wiki-link {
   padding: 0;
   margin-top: 0;
-
 }
 
 .wiki-link :hover {
   color: #F5F5F5;
 }
+
 
 /* Footer */
 
@@ -349,23 +343,34 @@ footer a:hover {
 }
 
 .name {
-  color: #F5F5F5;
+  color: #272c33;
   text-align: center;
   margin: 20px 0 0 0;
 }
 
 .my-links {
   padding-bottom: 20px;
+
 }
 
 .footer-link {
   padding: 0 15px 0 15px;
+
+}
+.footer-link-fcc:link,
+.footer-link-fcc:visited,
+.footer-link-fcc:active {
+  color: #272c33;
+}
+
+.footer-link-fcc:hover {
+  color: #BF5A75;
 }
 
 .footer-link:link,
 .footer-link:visited,
 .footer-link:active {
-  color: #F5F5F5;
+   color: #272c33;
 }
 
 .footer-link:hover {
@@ -377,8 +382,8 @@ footer a:hover {
 
 @media only screen and (max-width: 1366px) {
   body {
-    background: rgb(97, 97, 97);
-    background: linear-gradient(0deg, rgba(97, 97, 97, 1) 0%, rgba(44, 31, 57, 1) 16%, rgba(55, 123, 120, 1) 38%, rgba(66, 58, 74, 1) 61%, rgba(65, 57, 73, 1) 83%, rgba(59, 160, 145, 1) 100%);
+    background: rgb(212,205,127);
+background: linear-gradient(0deg, rgba(212,205,127,1) 0%, rgba(77,91,117,1) 40%, rgba(202,90,115,1) 100%);
   }
 }
 
@@ -408,7 +413,7 @@ footer a:hover {
   }
 
   .subtitle {
-    padding: 5px 15px;
+   padding: 0 20px 0 20px;
   }
 
   nav {
@@ -443,6 +448,11 @@ footer a:hover {
 
 @media only screen and (max-width: 370px) {
   .subtitle {
+    padding: 0 20px 0 20px;
+  }
+  .title {
+    font-size: 3rem;
+    line-height: 1.2
     padding: 5px 10px;
   }
 }
