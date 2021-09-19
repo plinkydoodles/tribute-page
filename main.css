@@ -14,15 +14,12 @@ html {
 /* Global Styles */
 
 body {
-  margin-top: 50px;
+  margin-top: 10px;
   background: rgb(97, 97, 97);
   background: linear-gradient(0deg, rgba(97, 97, 97, 1) 0%, rgba(44, 31, 57, 1) 16%, rgba(55, 123, 120, 1) 38%, rgba(66, 58, 74, 1) 61%, rgba(65, 57, 73, 1) 83%, rgba(59, 160, 145, 1) 100%);
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   color: #F5F5F5;
   text-align: center;
-
-
-
 
 }
 
@@ -35,14 +32,14 @@ i {
 }
 
 hr {
-  border: 2px solid #474747;
+  border: 1px solid #3f4652;
   border-radius: 1em;
 }
 
 /* Wrapper */
 
 main {
-  background-color: #292929;
+  background-color: #272c33;
   padding: 0 0 20px 0;
   border-radius: 7px;
   margin-left: 8%;
@@ -53,7 +50,7 @@ main {
 /* Header */
 
 header {
-  background-color: #474747;
+  background-color: #3f4652;
   margin: 10px 0 5px 0;
   padding: 25px 0 25px 0;
   border-top-right-radius: 7px;
@@ -65,9 +62,9 @@ header {
   font-size: 3.75rem;
   margin: 10px 0 10px 0;
   padding: 0 0 5px 0;
-  color: #EF7C8E;
+  color: #BF5A75;
   font-family: "Playfair Display", Helvetica, sans-serif;
-  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.3), 0 3px 7px rgba(0, 0, 0, 0.1), 0 3px 7px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.3), 0 3px 3px rgba(0, 0, 0, 0.1), 0 3px 3px rgba(0, 0, 0, 0.1);
 
 
 }
@@ -80,11 +77,8 @@ header {
   padding-bottom: 5px;
 }
 
-/* Misc Formatting */
 
-.margin-top {
-  margin-top: 18px;
-}
+/* Misc Formatting */
 
 .center {
   text-align: center;
@@ -96,12 +90,61 @@ header {
   line-height: 1.7;
   text-align: left;
   font-size: 1.09em;
+  text-align: justify;
+  text-justify: inter-word;
 }
+
+.separator {
+  margin: 1em;
+  font-size: 1em;
+  font-weight: 700;
+  color: #F5F5F5;
+}
+
+.arrow-top-link:hover {
+  color: #F5F5F5;
+}
+
+
+
+/* Main Image */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #3f4652;
+  padding: 10px;
+  background: #3f4652;
+  border-radius: .8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.img-div {
+
+  padding: 0 5% 0 5%;
+
+}
+
+.img-caption {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+  padding: 20px 0 0 0;
+  font-size: 1.05em;
+}
+
 
 /* Nav Menu */
 
 nav {
-  padding: 20px 0 0 0;
+  padding: 0px 0 20px 0;
 }
 
 .nav-list {
@@ -109,21 +152,26 @@ nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #292929;
+  background-color: #272c33;
 }
 
 .nav-link {
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px;
   font-size: 1.2em;
   font-weight: bold;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
+  background: #3f4652;
+  width: 12rem;
+  border-radius: 1.5rem;
+
 }
 
 a:link,
 a:visited,
 a:active {
-  color: #EF7C8E;
+  color: #BF5A75;
   text-decoration: none;
 }
 
@@ -132,46 +180,17 @@ nav a:hover {
 }
 
 .nav-li {
-  display: inline-block;
-}
-
-/* Main Image */
-
-img {
-  max-width: 100%;
-  height: auto;
-  width: 80%;
   display: block;
-  margin: 0 auto;
-  border: 2px solid #474747;
-  padding: 5px 5px 0 5px;
-  background: #474747;
-  border-top-left-radius: .8rem;
-  border-top-right-radius: .8rem;
 }
 
-.img-div {
-  padding-top: 20px;
-  padding-bottom: 4px;
-}
 
-.img-caption {
-  text-align: center;
-  background-color: #474747;
-  margin: 0 auto;
-  padding: 10px;
-  width: 80%;
-  border: 4px solid #474747;
-  font-size: 1.05em;
-  border-bottom-left-radius: .8rem;
-  border-bottom-right-radius: .8rem;
-
-}
 
 /* Biography Section */
 
 .bio {
-  padding: 16px 10% 0 10%;
+  padding: 16px 15% 0 15%;
+
+
 }
 
 .bio-header {
@@ -182,49 +201,65 @@ img {
 }
 
 .bio-icon {
-  color: #EF7C8E;
+  color: #BF5A75;
 }
 
-/* Quotes Section */
 
-q {
-  display: block;
-  text-align: center;
-  line-height: 1.5;
-  padding: 25px 20px 25px 20px;
+/* Discography Section */
+
+.discography {
+  padding: 16px 15% 0 15%;
 }
 
-q:first-of-type {
-  margin-top: 18px;
-}
-
-.sagan-quotes {
-  padding: 16px 10% 0 10%;
-}
-
-.sagan-quotes q:nth-of-type(odd) {
-  background: #474747;
-  border-top: 10px solid #D8A7B1;
-}
-
-.sagan-quotes-header {
-  padding: 10px 0 15px 0;
+.discography-header {
+  padding: 10px 0 20px 0;
   margin: 0;
   color: #F5F5F5;
 }
+.discography-category {
 
-.quote-icon {
-  color: #66C7B2;
+    color: #F5F5F5;
+    display: block;
+    text-align: center;
+    line-height: 1.5;
+    padding: 15px 10px 15px 10px;;
+    margin: 0;
+    background-color: #3f4652;
 }
+
+.discography-list {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+}
+
+.discography-list :nth-of-type(1n+0) {
+    border: 1px solid #3f4652;
+
+}
+
+.discography-list li {
+  line-height: 1.5;
+  padding: 15px 10px 15px 10px;
+}
+
+.discography-icon {
+  color: #66C7B2;
+  margin-top: 20px;
+}
+
 
 /* Awards Section */
 
 .awards {
-  padding: 0 10% 0 10%;
+  padding: 16px 15% 0 15%;
+  margin-top: 30px;
 }
 
 .awards-header {
-  padding: 10px 0 20px 0;
+  padding: 10px 0 30px 0;
   margin: 0;
   color: #F5F5F5;
 }
@@ -237,59 +272,56 @@ q:first-of-type {
 }
 
 .awards-list :nth-of-type(odd) {
-  /*background: #474747;*/
-  color: #EF7C8E;
-  border-radius: 1rem;
-  font-weight: bolder;
-  padding: 0px 10px 10px 10px;
-
+  background: #3f4652;
+  border-radius: 0.5rem;
 }
 
 .awards-list li {
   display: block;
   text-align: center;
   line-height: 1.5;
-  padding: 0px 10px 25px 10px;
+  padding: 25px 20px 25px 20px;
 }
 
 .awards-icon {
-  color: #EF7C8E;
+  color: #BF5A75;
 }
 
-/* Blockquote */
 
-blockquote {
-  background: #474747;
-  border-top: 10px solid #66C7B2;
-  margin: 1.9em 10px 1.5em 10px;
-  padding: 0.5em 1px 1em 10px;
+/* Wikipedia Section */
+
+.wiki {
+  padding: 18px 8% 0 8%;
+
 }
 
-.quote {
-  max-width: 1200px;
-  margin: 0 auto;
+q {
+  display: block;
+  line-height: 1.5;
+  padding: 25px 30px 25px 30px;
+  background: #3f4652;
+  border-left: 10px solid #BF5A75;
+   text-align: justify;
+  
 }
 
-.seperator {
-  margin: 1em;
-  font-size: 1em;
-  font-weight: 700;
+.wiki-header {
+  padding: 10px 0 20px 0;
+  margin: 0;
   color: #F5F5F5;
 }
-
-.arrow-top-link:hover {
-  color: #F5F5F5;
-}
-/* Link to Wikipedia */
 
 .wiki-icon {
-  color: #EF7C8E;
+  color: #BF5A75;
 }
+
+
+/* Link to Wikipedia */
+
 
 .wiki-link {
   padding: 0;
   margin-top: 0;
-
 
 }
 
@@ -307,12 +339,11 @@ footer a:active {
 }
 
 footer a:hover {
-  color: #EF7C8E;
+  color: #BF5A75;
 }
 
 .name {
   color: #F5F5F5;
-  /*text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);*/
   text-align: center;
   margin: 20px 0 0 0;
 }
@@ -332,86 +363,8 @@ footer a:hover {
 }
 
 .footer-link:hover {
-  color: #EF7C8E;
+  color: #BF5A75;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.discography-category {
-
-    color: #474747;
-    display: block;
-    text-align: center;
-    line-height: 1.5;
-    border: 2px solid #D8A7B1;
-    padding: 15px 10px 15px 10px;;
-    margin: 0;
-    /*border-radius: .8rem;*/
-    background-color: #D8A7B1;
-
-}
-
-.discography-list {
-  list-style-type: none;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-
-}
-
-.discography-list :nth-of-type(1n+0) {
-    border: 1px solid #474747;
-/*    border-radius: .8rem;*/
-
-}
-
-.discography-list li {
-  line-height: 1.5;
-  padding: 15px 10px 15px 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Mobile Responsive */
@@ -435,7 +388,7 @@ footer a:hover {
   }
 
   header {
-    background: #474747;
+    background: #3f4652;
     margin: 10px 0 5px 0;
     padding: 25px 10px 25px 10px;
   }
@@ -447,7 +400,7 @@ footer a:hover {
   nav {
     width: 260px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: -20px;
   }
 
   .nav-list {
@@ -457,7 +410,7 @@ footer a:hover {
 
   .nav-link {
     float: none;
-    background: #474747;
+    background: #3f4652;
     text-align: center;
     width: 12rem;
     border-radius: 1.5rem;
@@ -467,7 +420,8 @@ footer a:hover {
     text-indent: 0em;
     margin-bottom: 0;
     line-height: 1.7;
-    text-align: center;
+      text-align: justify;
+  text-justify: inter-word;
     font-size: 1.09em;
   }
 }
