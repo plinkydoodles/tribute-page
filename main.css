@@ -64,7 +64,7 @@ header {
   padding: 0 0 5px 0;
   color: #BF5A75;
   font-family: "Playfair Display", Helvetica, sans-serif;
-  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.3), 0 3px 3px rgba(0, 0, 0, 0.1), 0 3px 3px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
 
 
 }
@@ -91,7 +91,7 @@ header {
   text-align: left;
   font-size: 1.09em;
   text-align: justify;
-  text-justify: inter-word;
+  text-justify: auto;
 }
 
 .separator {
@@ -115,7 +115,7 @@ img {
   display: block;
   margin: 0 auto;
   border: 2px solid #3f4652;
-  padding: 10px;
+  padding: 5px;
   background: #3f4652;
   border-radius: .8rem;
   display: flex;
@@ -126,9 +126,9 @@ img {
 }
 
 .img-div {
-
-  padding: 0 5% 0 5%;
-
+  
+  padding-top: 20px ;
+  margin: 0% 10% 0 10%;
 }
 
 .img-caption {
@@ -144,7 +144,9 @@ img {
 /* Nav Menu */
 
 nav {
-  padding: 0px 0 20px 0;
+  margin-top: 40px;
+  padding: 5px 0 5px 0;
+    background: #3f4652;
 }
 
 .nav-list {
@@ -152,7 +154,7 @@ nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #272c33;
+
 }
 
 .nav-link {
@@ -163,8 +165,8 @@ nav {
   font-weight: bold;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
   background: #3f4652;
-  width: 12rem;
-  border-radius: 1.5rem;
+/*  width: 8rem;*/
+/*border-radius: 1.5rem;*/
 
 }
 
@@ -177,10 +179,11 @@ a:active {
 
 nav a:hover {
   color: #F5F5F5;
+  background: #BF5A75;
 }
 
 .nav-li {
-  display: block;
+  display: inline-block;
 }
 
 
@@ -188,7 +191,7 @@ nav a:hover {
 /* Biography Section */
 
 .bio {
-  padding: 16px 15% 0 15%;
+  padding: 16px 10% 0 10%;
 
 
 }
@@ -208,7 +211,8 @@ nav a:hover {
 /* Discography Section */
 
 .discography {
-  padding: 16px 15% 0 15%;
+  padding: 16px 10% 0 10%;
+
 }
 
 .discography-header {
@@ -247,15 +251,15 @@ nav a:hover {
 
 .discography-icon {
   color: #66C7B2;
-  margin-top: 20px;
+ 
 }
 
 
 /* Awards Section */
 
 .awards {
-  padding: 16px 15% 0 15%;
-  margin-top: 30px;
+  padding: 16px 10% 0 10%;
+
 }
 
 .awards-header {
@@ -291,7 +295,9 @@ nav a:hover {
 /* Wikipedia Section */
 
 .wiki {
-  padding: 18px 8% 0 8%;
+/*  padding: 18px 10% 0 10%;\*/
+    padding-top: 10px ;
+  margin: 0 5% 0 5%;
 
 }
 
@@ -383,6 +389,14 @@ footer a:hover {
     text-align: center;
   }
 
+  @media (max-width: 460px) {
+    .title {
+      font-size: 3.5rem;
+      line-height: 1.2;
+    }
+
+  }
+
   main {
     margin: 0 auto;
   }
@@ -400,7 +414,8 @@ footer a:hover {
   nav {
     width: 260px;
     margin: 0 auto;
-    padding-top: -20px;
+    padding-top: 20px;
+    background: transparent;
   }
 
   .nav-list {
@@ -421,7 +436,7 @@ footer a:hover {
     margin-bottom: 0;
     line-height: 1.7;
       text-align: justify;
-  text-justify: inter-word;
+  text-justify: auto;
     font-size: 1.09em;
   }
 }
