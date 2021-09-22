@@ -1,0 +1,476 @@
+/* Universal Box Sizing with Inheritance */
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Global Styles */
+
+body {
+  margin-top: 10px;
+  background: rgb(212,205,127);
+  background: linear-gradient(0deg, rgba(212,205,127,1) 0%, rgba(77,91,117,1) 50%, rgba(201,89,117,1) 100%);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: #F5F5F5;
+  text-align: center;
+
+}
+
+li {
+  padding-bottom: 5px;
+}
+
+i {
+  padding-top: 20px;
+}
+
+hr {
+  border: 1px solid #3f4652;
+  border-radius: 1em;
+}
+
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Wrapper */
+
+main {
+  background-color: #272c33;
+  padding: 0 0 20px 0;
+  border-radius: 7px;
+  margin-left: 8%;
+  margin-right: 8%;
+  min-width: 250px;
+}
+
+/* Header */
+
+header {
+  background-color: #272c33;
+  margin: 10px 0 5px 0;
+  padding: 25px 0 25px 0;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+.title {
+  text-align: center;
+  font-size: 3.75rem;
+  margin: 15px 0 0 0;
+  padding: 5px 0 0 0;
+  color: #C95975;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+
+
+
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: normal;
+  color: #F5F5F5;
+  padding-top: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+
+
+}
+
+
+/* Misc Formatting */
+
+.center {
+  text-align: center;
+}
+
+.indent {
+  text-indent: 2.5em;
+  margin-bottom: 0;
+  line-height: 1.7;
+  text-align: left;
+  font-size: 1.09em;
+  text-align: justify;
+  text-justify: auto;
+}
+
+.separator {
+  margin: 1em;
+  font-size: 1em;
+  font-weight: 700;
+  color: #F5F5F5;
+}
+
+.arrow-top-link:hover {
+  color: #F5F5F5;
+}
+
+
+/* Main Image */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #3f4652;
+  padding: 5px;
+  background: #3f4652;
+  border-radius: .8rem;
+
+}
+
+.img-div {
+  
+  padding-top: 25px ;
+  margin: 0% 10% 0 10%;
+}
+
+.img-caption {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+  padding: 20px 0 0 0;
+  font-size: 1.05em;
+}
+
+
+/* Nav Menu */
+
+nav {
+    padding: 10px 0 5px 0;
+    background: #3f4652;
+             
+}
+
+.nav-list {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.nav-link {
+  display: block;
+  text-align: center;
+  padding: 14px;
+  font-size: 1em;
+  font-weight: bold;
+  background: #3f4652;
+
+
+}
+
+a:link,
+a:visited,
+a:active {
+  color: #C95975;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #F5F5F5;
+  background: #C95975;
+}
+
+.nav-li {
+  display: inline-block;
+}
+
+
+
+/* Biography Section */
+
+.bio {
+  padding: 16px 10% 0 10%;
+
+
+}
+
+.bio-header {
+  font-size: 24px;
+  padding: 10px 0 10px 0;
+  margin: 0;
+
+}
+
+.bio-icon {
+  color: #C95975;
+}
+
+
+/* Discography Section */
+
+.discography {
+  padding: 16px 10% 0 10%;
+
+}
+
+.discography-header {
+  padding: 10px 0 20px 0;
+  margin: 0;
+  
+}
+.discography-category {
+
+    color: #F5F5F5;
+    display: block;
+    text-align: center;
+    line-height: 1.5;
+    padding: 15px 10px 15px 10px;;
+    margin: 0;
+    background-color: #3f4652;
+      border: 1px solid white;
+
+}
+
+.discography-list {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+}
+
+.discography-list :nth-of-type(1n+0) {
+    border: 1px solid #3f4652;
+
+}
+
+.discography-list li {
+  line-height: 1.5;
+  padding: 15px 10px 15px 10px;
+}
+
+.discography-icon {
+  color: #66C7B2;
+ 
+}
+
+
+/* Awards Section */
+
+.awards {
+  padding: 16px 10% 0 10%;
+
+}
+
+.awards-header {
+  padding: 10px 0 30px 0;
+  margin: 0;
+  
+}
+
+.awards-list {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.awards-list :nth-of-type(odd) {
+  background: #3f4652;
+  border-radius: 0.5rem;
+}
+
+.awards-list li {
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+  padding: 25px 20px 25px 20px;
+}
+
+.awards-icon {
+  color: #C95975;
+}
+
+
+/* Wikipedia Section */
+
+.wiki {
+  padding-top: 10px ;
+  margin: 0 5.25% 0 5.25%;
+
+}
+
+q {
+  display: block;
+  line-height: 1.5;
+  padding: 25px 50px 25px 50px;
+  background: #3f4652;
+  border-left: 10px solid #C95975;
+  text-align: justify;
+  
+}
+
+.wiki-header {
+  padding: 10px 0 20px 0;
+  margin: 0;
+  color: #F5F5F5;
+}
+
+.wiki-icon {
+  color: #C95975;
+}
+
+
+/* Link to Wikipedia */
+
+.wiki-link {
+  padding: 0;
+  margin-top: 0;
+}
+
+.wiki-link :hover {
+  color: #F5F5F5;
+}
+
+
+/* Footer */
+
+footer a:link,
+footer a:visited,
+footer a:active {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #C95975;
+}
+
+.name {
+  color: #272c33;
+  text-align: center;
+  margin: 20px 0 0 0;
+   padding: 0 15px 0 15px;
+    font-size: 0.9em;
+  font-weight: bold;
+}
+
+.my-links {
+  padding-bottom: 20px;
+
+}
+
+.footer-link {
+  padding: 0 15px 0 15px;
+
+}
+.footer-link-fcc:link,
+.footer-link-fcc:visited,
+.footer-link-fcc:active {
+  color: #272c33;
+}
+
+.footer-link-fcc:hover {
+  color: #C95975;
+}
+
+.footer-link:link,
+.footer-link:visited,
+.footer-link:active {
+   color: #272c33;
+}
+
+.footer-link:hover {
+  color: #C95975;
+}
+
+
+/* Mobile Responsive */
+
+@media only screen and (max-width: 1366px) {
+  body {
+  background: rgb(212,205,127);
+background: linear-gradient(0deg, rgba(212,205,127,1) 0%, rgba(77,91,117,1) 50%, rgba(201,89,117,1) 100%);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    margin-top: 0;
+    color: #F5F5F5;
+    text-align: center;
+  }
+
+  @media (max-width: 460px) {
+    .title {
+      font-size: 3.2rem;
+      line-height: 1.2;
+    }
+  }
+
+  main {
+    margin: 0 auto;
+  }
+
+  header {
+    background: #272c33;
+    border-bottom: 3px solid #3f4652;
+    margin: 10px 0 5px 0;
+    padding: 25px 10px 25px 10px;
+  }
+
+  .subtitle {
+   padding: 0 20px 0 20px;
+  }
+
+  nav {
+    width: 260px;
+    margin: 0 auto;
+    padding-top: 20px;
+    background: transparent;
+  }
+
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .nav-link {
+    float: none;
+    background: #3f4652;
+    text-align: center;
+    width: 12rem;
+    border-radius: 1.5rem;
+  }
+
+  .indent {
+    text-indent: 0em;
+    margin-bottom: 0;
+    line-height: 1.7;
+    text-align: justify;
+    text-justify: auto;
+    font-size: 1.09em;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .subtitle {
+    padding: 0 20px 0 20px;
+  }
+  .title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    padding: 5px 10px;
+  }
+}
