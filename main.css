@@ -464,6 +464,18 @@ background: linear-gradient(0deg, rgba(212,205,127,1) 0%, rgba(77,91,117,1) 50%,
     text-justify: auto;
     font-size: 1.09em;
   }*/
+
+  img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #3f4652;
+  padding: 5px;
+  background: #3f4652;
+  border-radius: .8rem;
+
+}
 }
 
 @media only screen and (max-width: 370px) {
@@ -475,4 +487,16 @@ background: linear-gradient(0deg, rgba(212,205,127,1) 0%, rgba(77,91,117,1) 50%,
     line-height: 1.2;
     padding: 5px 10px;
   }
+
+  img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #3f4652;
+  padding: 5px;
+  background: #3f4652;
+  border-radius: .8rem;
+
+}
 }
