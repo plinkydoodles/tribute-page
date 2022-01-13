@@ -10,4 +10,4 @@ You can use HTML, JavaScript, and CSS to complete this project.
 
 ## Completed Project
 
-https://plinkydoodles.github.io/tribute-page
+https://plinkysumagyap.github.io/tribute-page
